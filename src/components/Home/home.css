@@ -1,0 +1,162 @@
+.top-section {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction h1 {
+  text-wrap: wrap;
+  font-size: 71px;
+  color: #36536b;
+}
+
+.input {
+  display: flex;
+  width: 445px;
+  height: 48px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.input:focus {
+  border: none;
+}
+
+.input button {
+  background-color: #ba4270;
+  color: white;
+  border: none;
+  width: 173px;
+  border-radius: 24px;
+}
+
+.input input {
+  width: 272px;
+  border: none;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  text-align: center;
+}
+
+.work-section {
+  background-color: #1b262f;
+  background-image: url("/public/assets/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  padding-left: 8%;
+  padding-right: 8%;
+  height: 472px;
+}
+
+.work-with {
+  color: #fbfcfe;
+  width: 445px;
+}
+
+.work-with h2 {
+  font-size: 48px;
+  color: white;
+}
+
+.work-with p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.work-with button {
+  background-color: transparent;
+  color: #fbfcfe;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  font-size: 15px;
+  width: 129px;
+  height: 48px;
+}
+
+.grid-companies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.grid-companies img {
+  filter: brightness(100); /* This will turn gray to white */
+}
+
+.details {
+  padding-left: 8%;
+  padding-right: 8%;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  color: #6c8294;
+}
+
+.details h3,
+h2,
+h4 {
+  color: #36536b;
+}
+
+.details .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-text {
+  text-align: start;
+  width: 445px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-text h3 {
+  font-size: 48px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.top-text p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom h2 {
+  font-size: 48px;
+}
