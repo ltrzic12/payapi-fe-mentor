@@ -10,7 +10,9 @@ const Home = () => {
             <input type='text' placeholder='Enter email adress' />{" "}
             <button>Schedule a demo</button>
           </div>
-          <span>questions</span>
+          <p>
+            Have any questions? <span>Contact Us</span>
+          </p>
         </div>
         <div className='image'>
           <img

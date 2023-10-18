@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "DM Serif Display";
 }
 
 code {
@@ -18,4 +19,8 @@ code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: right;
+}
+
+p {
+  font-family: "Public Sans";
 }

@@ -13,6 +13,14 @@
   flex-direction: column;
 }
 
+.introduction p {
+  color: #6c8294;
+}
+
+.introduction span {
+  color: #1b262f;
+}
+
 .introduction h1 {
   text-wrap: wrap;
   font-size: 71px;
@@ -37,6 +45,7 @@
   border: none;
   width: 173px;
   border-radius: 24px;
+  font-weight: bold;
 }
 
 .input input {

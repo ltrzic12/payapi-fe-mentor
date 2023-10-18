@@ -6,6 +6,7 @@ const Footer = () => {
     color: "rgb(251,252,254)",
     textDecoration: "none",
     filter: "brightness(100)",
+    cursor: "pointer",
   };
   return (
     <div className='footer-wrap'>
@@ -14,16 +15,30 @@ const Footer = () => {
           <NavLink
             text={
               <img src='/assets/shared/desktop/logo.svg' alt='' style={style} />
-            }></NavLink>
+            }
+            path={"/"}></NavLink>
 
-          <NavLink text={"Pricing"} linkStyle={style}></NavLink>
-          <NavLink text={"About"} linkStyle={style}></NavLink>
-          <NavLink text={"Contact"} linkStyle={style}></NavLink>
+          <NavLink
+            text={"Pricing"}
+            linkStyle={style}
+            path={"/pricing"}></NavLink>
+          <NavLink text={"About"} linkStyle={style} path={"/about"}></NavLink>
+          <NavLink
+            text={"Contact"}
+            linkStyle={style}
+            path={"/contact"}></NavLink>
         </div>
         <div className='part'>
-          <img src='/assets/shared/desktop/facebook.svg' alt='' />
-          <img src='/assets/shared/desktop/twitter.svg' alt='' />
-          <img src='/assets/shared/desktop/linkedin.svg' alt='' />
+          <NavLink
+            text={<img src='/assets/shared/desktop/facebook.svg' alt='' />}
+            linkStyle={style}></NavLink>
+          <NavLink
+            text={
+              <img src='/assets/shared/desktop/twitter.svg' alt='' />
+            }></NavLink>
+          <NavLink
+            text={<img src='/assets/shared/desktop/linkedin.svg' alt='' />}
+            linkStyle={style}></NavLink>
         </div>
       </div>
     </div>
