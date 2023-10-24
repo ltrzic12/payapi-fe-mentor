@@ -1,0 +1,55 @@
+.home-benefits {
+  padding: 2em 10em;
+}
+
+.home-benefits-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  text-align: center;
+}
+
+.home-benefits-icons p {
+  text-align: center;
+}
+
+.home-benefits-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.home-benefits-bottom h2 {
+  color: #36536b;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-benefits-bottom .contact-input {
+  width: 40%;
+}
+
+@media (max-width: 1000px) {
+  .home-benefits {
+    padding: 1.5em;
+  }
+
+  .home-benefits-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-benefits-bottom .contact-input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-benefits {
+    padding: 1em;
+  }
+  .home-benefits-icons {
+    flex-direction: column;
+  }
+}

@@ -1,32 +1,47 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1% 8% 1% 8%;
+  align-items: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
-  background-color: transparent;
+  padding: 1.5em 10em;
 }
-.navbar h3 {
+
+.left {
+  width: 50%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.navbar .link {
+  color: rgb(109, 131, 149);
+}
+
+.navbar .link:hover {
   color: #36536b;
-  gap: 50%;
 }
 
-.part {
-  display: flex;
-  gap: 70px;
-  align-items: center;
-}
+@media (max-width: 1000px) {
+  .navbar {
+    justify-content: space-evenly;
+    padding: 1.5em;
+  }
 
-.part button {
-  background-color: #ba4270;
-  color: white;
-  border-radius: 24px;
-  height: 48px;
-  width: 173px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
+  .left {
+    justify-content: center;
+    gap: 1.5em;
+    width: 70%;
+  }
+
+  .right {
+    width: 30%;
+  }
 }

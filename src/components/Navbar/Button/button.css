@@ -1,0 +1,14 @@
+.demo-button {
+  background-color: #ba4270;
+  color: white;
+  border-radius: 24px;
+  font-weight: bold;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.demo-button:hover {
+  background-color: #da6d97;
+}

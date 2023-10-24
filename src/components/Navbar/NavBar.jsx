@@ -1,22 +1,29 @@
-import NavLink from "../Link/Link";
 import "./navbar.css";
+import BarLink from "./Link/Link";
+import DemoButton from "./Button/DemoButton";
+import Hamburger from "./Hamburger/Hamburger";
 
-const NavBar = () => {
+const NavBar = ({ isMobileView }) => {
   return (
-    <div className='nav-bar-wrap'>
-      <div className='navbar'>
-        <div className='part-left'>
-          <NavLink
-            text={<img src='/assets/shared/desktop/logo.svg' alt='' />}
-            path={"/"}></NavLink>
+    <div className='navbar'>
+      <div className='left'>
+        <BarLink
+          text={<img src='/assets/shared/desktop/logo.svg' alt='logo' />}
+          path={"/home"}></BarLink>
 
-          <NavLink text={"Pricing"} path={"/pricing"}></NavLink>
-          <NavLink text={"About"} path={"/about"}></NavLink>
-          <NavLink text={"Contact"} path={"/pricing"}></NavLink>
-        </div>
-        <div className='part'>
-          <button>Schedule a demo</button>
-        </div>
+        {!isMobileView && (
+          <>
+            <BarLink text={"Pricing"} path={"/pricing"}></BarLink>
+
+            <BarLink text={"About"} path={"/about"}></BarLink>
+
+            <BarLink text={"Contact"} path={"/contact"}></BarLink>
+          </>
+        )}
+      </div>
+      <div className='right'>
+        {!isMobileView && <DemoButton></DemoButton>}
+        {isMobileView && <Hamburger></Hamburger>}
       </div>
     </div>
   );

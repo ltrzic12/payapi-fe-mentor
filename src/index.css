@@ -13,14 +13,66 @@ code {
     monospace;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .app {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
   background-color: #edf3f8;
-  background-image: url("/public/assets/shared/desktop/bg-pattern-circle.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: right;
+  /* background: url("/public/assets/shared/desktop/bg-pattern-circle.svg") 1000px -300px
+      no-repeat,
+    url("/public/assets/shared/desktop/bg-pattern-circle.svg") 1100px 1200px
+      no-repeat,
+    url("/public/assets/shared/desktop/bg-pattern-circle.svg") -10.3em 24.5em no-repeat; */
+}
+
+h1 {
+  font-size: 72px;
 }
 
 p {
-  font-family: "Public Sans";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6c8294;
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #6c8294;
+  font-weight: 600;
+}
+
+h1 {
+  color: #36536b;
+}
+
+input {
+  color: #6c8294;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 48px;
+  color: #fbfcfe;
+}
+
+h4 {
+  font-size: 18px;
+  color: #36536b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
 }

@@ -1,0 +1,98 @@
+.home-mid {
+  display: flex;
+  background-color: #1b262f;
+  background-image: url("/public/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: -10.3em -22em;
+  background-repeat: no-repeat;
+  padding: 5em 10em;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.work-with {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 6em 0 0;
+}
+
+.work-with p {
+  color: rgb(184, 188, 192);
+  padding-bottom: 2em;
+}
+
+.work-with button {
+  padding: 1em 1.7em;
+  background-color: transparent;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.work-with button:hover {
+  background-color: #fbfcfe;
+}
+.work-with button:hover a {
+  color: #1b262f;
+}
+
+.work-with button a {
+  color: #fbfcfe;
+  cursor: pointer;
+}
+
+.companies {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.companies img {
+  filter: brightness(100);
+}
+
+@media (max-width: 1000px) {
+  .home-mid {
+    flex-direction: column-reverse;
+    padding: 1.5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  .work-with {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .companies {
+    width: 100%;
+    place-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-mid {
+    padding: 1em;
+    text-wrap: wrap;
+  }
+  .home-mid .companies {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding-top: 2em;
+  }
+
+  .home-mid .work-with {
+    padding: 0;
+    width: 100%;
+  }
+}

@@ -1,44 +1,26 @@
-import NavLink from "../Link/Link";
+import { footerLinkStyle } from "../../mics/styles/navLinkStyle";
+import DemoButton from "../Navbar/Button/DemoButton";
+import BarLink from "../Navbar/Link/Link";
 import "./footer.css";
 
 const Footer = () => {
-  const style = {
-    color: "rgb(251,252,254)",
-    textDecoration: "none",
-    filter: "brightness(100)",
-    cursor: "pointer",
-  };
   return (
-    <div className='footer-wrap'>
-      <div className='footer'>
-        <div className='part-left'>
-          <NavLink
-            text={
-              <img src='/assets/shared/desktop/logo.svg' alt='' style={style} />
-            }
-            path={"/"}></NavLink>
+    <div className='footer'>
+      <div className='left'>
+        <BarLink
+          text={<img src='/assets/shared/desktop/logo.svg' alt='logo' />}
+          path={"/home"}></BarLink>
+        <BarLink text={"Pricing"} path={"/pricing"}></BarLink>
 
-          <NavLink
-            text={"Pricing"}
-            linkStyle={style}
-            path={"/pricing"}></NavLink>
-          <NavLink text={"About"} linkStyle={style} path={"/about"}></NavLink>
-          <NavLink
-            text={"Contact"}
-            linkStyle={style}
-            path={"/contact"}></NavLink>
-        </div>
-        <div className='part'>
-          <NavLink
-            text={<img src='/assets/shared/desktop/facebook.svg' alt='' />}
-            linkStyle={style}></NavLink>
-          <NavLink
-            text={
-              <img src='/assets/shared/desktop/twitter.svg' alt='' />
-            }></NavLink>
-          <NavLink
-            text={<img src='/assets/shared/desktop/linkedin.svg' alt='' />}
-            linkStyle={style}></NavLink>
+        <BarLink text={"About"} path={"/about"}></BarLink>
+
+        <BarLink text={"Contact"} path={"/contact"}></BarLink>
+      </div>
+      <div className='right'>
+        <div className='logos'>
+          <img src='/assets/shared/desktop/facebook.svg' alt='' />
+          <img src='/assets/shared/desktop/twitter.svg' alt='' />
+          <img src='/assets/shared/desktop/linkedin.svg' alt='' />
         </div>
       </div>
     </div>
