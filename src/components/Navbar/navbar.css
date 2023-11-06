@@ -6,6 +6,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   padding: 1.5em 10em;
+  position: sticky;
+  top: 0;
+  background-color: #edf3f8;
+  z-index: 999;
 }
 
 .left {

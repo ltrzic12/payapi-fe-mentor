@@ -1,5 +1,3 @@
-import { footerLinkStyle } from "../../mics/styles/navLinkStyle";
-import DemoButton from "../Navbar/Button/DemoButton";
 import BarLink from "../Navbar/Link/Link";
 import "./footer.css";
 

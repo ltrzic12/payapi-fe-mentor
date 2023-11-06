@@ -6,7 +6,7 @@ const Hamburger = ({ onClick }) => {
   };
   return (
     <button className='hamburger' onClick={handleClick}>
-      <i class='fa-solid fa-bars fa-2xl' style={{ color: "#36536b" }}></i>
+      <i className='fa-solid fa-bars fa-2xl' style={{ color: "#36536b" }}></i>
     </button>
   );
 };

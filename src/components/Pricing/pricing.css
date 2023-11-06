@@ -1,0 +1,132 @@
+.pricing {
+  padding: 1em 10em;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  width: 30%;
+}
+
+.plan li {
+  list-style-image: url("/public/assets/shared/desktop/icon-check.svg");
+  padding-left: 0.5em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: -1em;
+  gap: 0.5em;
+}
+
+.pricing h2 {
+  color: #36536b;
+}
+
+.pricing h3 {
+  color: #ba4270;
+  font-size: 32px;
+}
+
+ul .no-dot {
+  list-style: none;
+  color: rgb(145, 163, 177);
+}
+
+.line {
+  width: 100%;
+  border: 1px solid rgb(145, 163, 177);
+}
+
+.pricing-h2 {
+}
+
+.plan h2 {
+  padding-bottom: 0.1em;
+}
+
+.plan h3 {
+}
+
+.plan button {
+  padding: 1em 1.7em;
+  background-color: transparent;
+  border: 1px solid #36536b;
+  color: #36536b;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.plan button:hover {
+  background-color: #36536b;
+  color: #fbfcfe;
+}
+
+@media (max-width: 1000px) {
+  .pricing {
+    padding: 1.5em;
+  }
+  .pricing h2 {
+    text-align: center;
+  }
+
+  .plan h3 {
+    text-wrap: nowrap;
+  }
+
+  .plan {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 1em;
+  }
+
+  .plans {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .plan h2,
+  h3 {
+    text-align: center;
+  }
+
+  .plan h3 {
+    font-size: 24px;
+  }
+
+  .plans h2 {
+    font-size: 56px;
+  }
+
+  .plan h2 {
+    font-size: 56px;
+  }
+
+  .plan p {
+    display: none;
+  }
+}

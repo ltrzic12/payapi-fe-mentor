@@ -1,0 +1,153 @@
+.about {
+  margin: 0 auto;
+}
+
+.about-top {
+  padding: 2em 12em;
+}
+
+.about-section {
+  /* padding: 0 2em 0 2em; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+}
+
+.about-section h3 {
+  color: #36536b;
+  font-size: 32px;
+}
+
+.about-section p {
+  width: 70%;
+  font-size: 15px;
+}
+
+.about h2 {
+  color: #36536b;
+  font-size: 56px;
+  width: 60%;
+}
+
+.about .image {
+  width: 100vw;
+  height: auto;
+}
+
+.image img {
+  width: 100vw;
+}
+
+.about-team {
+  padding: 2em 10em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.about-team-item {
+  width: 33%;
+}
+
+.about-team-item h5 {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #36536b;
+  font-weight: 100;
+  margin-bottom: -1.4em;
+}
+
+.about-team-item h2 {
+  color: #ba4270;
+  font-size: 56px;
+  margin-bottom: 0.2em;
+}
+
+@media (max-width: 1000px) {
+  .about-top {
+    padding: 1.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-top h2 {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .about h3 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .about-team h5 {
+    display: none;
+  }
+
+  .about .contact-input {
+    width: 100%;
+  }
+
+  .about-team {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2em;
+  }
+
+  .about-team {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2em;
+  }
+  .about-team-item {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  .about-team h2 {
+    text-align: center;
+    font-size: 56px;
+    width: 100%;
+  }
+  .about-team-item .line {
+    display: none;
+  }
+
+  .about-team-item:first-child .line:first-child {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .about-team-item:last-child .line:last-child {
+    display: block;
+    width: 100%;
+  }
+
+  .about-team-item h5 {
+    display: block;
+  }
+}
